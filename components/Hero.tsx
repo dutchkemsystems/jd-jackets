@@ -2,12 +2,9 @@
 
 import { motion } from "framer-motion";
 import Jacket360 from "@/components/Jacket360";
+import { getFramesForJacket } from "@/lib/jackets";
 
-const HERO_FRAMES = [
-  "/jackets/executive-puffer/frame-001.webp",
-  "/jackets/executive-puffer/frame-002.webp",
-  "/jackets/executive-puffer/frame-003.webp",
-];
+const HERO_FRAMES = getFramesForJacket("executive-puffer");
 
 export default function Hero() {
   return (
